@@ -62,10 +62,11 @@ function updateActiveLink() {
 
 /* ── Typed text ── */
 const phrases = [
-  'Software Developer',
-  'Open Source Enthusiast',
-  'Problem Solver',
+  'DevOps Engineer',
   'Continuous Learner',
+  'Software Engineer',
+  'Problem Solver',
+  'Automation Enthusiast'
 ];
 
 let phraseIndex = 0;
