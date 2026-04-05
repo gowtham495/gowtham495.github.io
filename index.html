@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gowtham | Portfolio</title>
+  <meta name="description" content="Professional portfolio of Gowtham — software developer showcasing GitHub projects and LinkedIn activity." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ─── NAV ─── -->
+  <header class="nav-header" id="navbar">
+    <nav class="nav-inner">
+      <a href="#hero" class="nav-logo">G<span class="accent">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#linkedin">LinkedIn</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="nav-burger" id="navBurger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="container hero-content">
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1 class="hero-name">Gowtham<span class="accent">.</span></h1>
+      <h2 class="hero-title">
+        <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+      </h2>
+      <p class="hero-desc">
+        I build things for the web &amp; beyond — crafting elegant, performant solutions
+        and sharing insights along the way.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+      <div class="hero-social">
+        <a href="https://github.com/gowtham495" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/gowtham495" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </a>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-avatar-wrap">
+          <div class="about-avatar">
+            <img
+              src="https://github.com/gowtham495.png"
+              alt="Gowtham's profile photo"
+              loading="lazy"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <div class="avatar-fallback" style="display:none;">G</div>
+            <div class="avatar-ring"></div>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card"><span class="stat-num" id="repoCount">—</span><span class="stat-label">Repos</span></div>
+            <div class="stat-card"><span class="stat-num" id="starCount">—</span><span class="stat-label">Stars</span></div>
+            <div class="stat-card"><span class="stat-num" id="followerCount">—</span><span class="stat-label">Followers</span></div>
+          </div>
+        </div>
+        <div class="about-text">
+          <p>
+            I'm a passionate software developer who loves turning complex problems into clean, 
+            efficient solutions. My work spans full-stack web development, open-source contributions, 
+            and continuous learning in the ever-evolving tech landscape.
+          </p>
+          <p>
+            When I'm not coding, I share insights and learnings on LinkedIn — from tech deep-dives 
+            to career reflections — because I believe knowledge grows when it's shared.
+          </p>
+          <a href="https://github.com/gowtham495" target="_blank" rel="noopener" class="btn btn-outline" style="margin-top:1rem;">
+            View GitHub Profile →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ─── -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Expertise</span>
+        <h2 class="section-title">Skills &amp; Technologies</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Languages</h3>
+          <div class="skill-pills">
+            <span class="pill">Python</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">TypeScript</span>
+            <span class="pill">Java</span>
+            <span class="pill">SQL</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Frontend</h3>
+          <div class="skill-pills">
+            <span class="pill">React</span>
+            <span class="pill">HTML5</span>
+            <span class="pill">CSS3</span>
+            <span class="pill">Tailwind</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Backend &amp; Cloud</h3>
+          <div class="skill-pills">
+            <span class="pill">Node.js</span>
+            <span class="pill">REST APIs</span>
+            <span class="pill">AWS</span>
+            <span class="pill">Docker</span>
+            <span class="pill">Git</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="skill-cat-title">Tools &amp; More</h3>
+          <div class="skill-pills">
+            <span class="pill">GitHub Actions</span>
+            <span class="pill">Linux</span>
+            <span class="pill">VS Code</span>
+            <span class="pill">Figma</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ─── -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Work</span>
+        <h2 class="section-title">GitHub Projects</h2>
+        <p class="section-sub">A selection of my public repositories — fetched live from GitHub.</p>
+      </div>
+      <div class="filter-bar" id="filterBar">
+        <button class="filter-btn active" data-lang="all">All</button>
+      </div>
+      <div class="projects-grid" id="projectsGrid">
+        <div class="loading-state">
+          <div class="spinner"></div>
+          <p>Loading projects…</p>
+        </div>
+      </div>
+      <div class="projects-more" id="projectsMore" style="display:none;">
+        <a href="https://github.com/gowtham495?tab=repositories" target="_blank" rel="noopener" class="btn btn-outline">
+          View All Repositories →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── LINKEDIN ─── -->
+  <section class="section section-alt" id="linkedin">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Social</span>
+        <h2 class="section-title">LinkedIn Activity</h2>
+        <p class="section-sub">Thoughts, insights, and learnings I've shared on LinkedIn.</p>
+      </div>
+      <div class="linkedin-grid" id="linkedinGrid">
+        <!-- Static featured posts — update with your real post URLs -->
+        <article class="li-card reveal">
+          <div class="li-card-header">
+            <div class="li-avatar">G</div>
+            <div>
+              <p class="li-author">Gowtham</p>
+              <p class="li-meta">Software Developer · LinkedIn</p>
+            </div>
+            <a href="https://www.linkedin.com/in/gowtham495" target="_blank" rel="noopener" class="li-logo" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </div>
+          <p class="li-content">
+            🚀 Excited to share my latest open-source contribution! Building in public is one of the 
+            best ways to grow as a developer. Every PR, every issue, every commit is a step forward. 
+            What have you shipped recently?
+          </p>
+          <div class="li-footer">
+            <a href="https://www.linkedin.com/in/gowtham495" target="_blank" rel="noopener" class="li-read-more">Read on LinkedIn →</a>
+          </div>
+        </article>
+
+        <article class="li-card reveal">
+          <div class="li-card-header">
+            <div class="li-avatar">G</div>
+            <div>
+              <p class="li-author">Gowtham</p>
+              <p class="li-meta">Software Developer · LinkedIn</p>
+            </div>
+            <a href="https://www.linkedin.com/in/gowtham495" target="_blank" rel="noopener" class="li-logo" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </div>
+          <p class="li-content">
+            💡 Tip of the week: Code review isn't just about finding bugs — it's about sharing 
+            knowledge and raising the bar for the entire team. 
+            Next time you review code, ask yourself: "Would the author learn something from my feedback?"
+          </p>
+          <div class="li-footer">
+            <a href="https://www.linkedin.com/in/gowtham495" target="_blank" rel="noopener" class="li-read-more">Read on LinkedIn →</a>
+          </div>
+        </article>
+
+        <article class="li-card reveal">
+          <div class="li-card-header">
+            <div class="li-avatar">G</div>
+            <div>
+              <p class="li-author">Gowtham</p>
+              <p class="li-meta">Software Developer · LinkedIn</p>
+            </div>
+            <a href="https://www.linkedin.com/in/gowtham495" target="_blank" rel="noopener" class="li-logo" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </div>
+          <p class="li-content">
+            🌱 Learning in public: Just pushed a new project exploring modern JavaScript patterns. 
+            The best way to cement a concept? Teach it. 
+            Documenting your journey online creates a feedback loop that accelerates growth.
+          </p>
+          <div class="li-footer">
+            <a href="https://www.linkedin.com/in/gowtham495" target="_blank" rel="noopener" class="li-read-more">Read on LinkedIn →</a>
+          </div>
+        </article>
+      </div>
+      <div style="text-align:center; margin-top:2.5rem;">
+        <a href="https://www.linkedin.com/in/gowtham495" target="_blank" rel="noopener" class="btn btn-primary">
+          Follow on LinkedIn →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section class="section" id="contact">
+    <div class="container contact-container">
+      <div class="section-header">
+        <span class="section-tag">Contact</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-sub">
+          Have a project idea, a question, or just want to say hello? 
+          My inbox is always open.
+        </p>
+      </div>
+      <div class="contact-links">
+        <a href="https://github.com/gowtham495" target="_blank" rel="noopener" class="contact-card">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          <span>GitHub</span>
+          <small>@gowtham495</small>
+        </a>
+        <a href="https://www.linkedin.com/in/gowtham495" target="_blank" rel="noopener" class="contact-card">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          <span>LinkedIn</span>
+          <small>gowtham495</small>
+        </a>
+        <a href="mailto:gowtham495@gmail.com" class="contact-card">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>Email</span>
+          <small>Say hello</small>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>Designed &amp; built by <strong>Gowtham</strong></p>
+      <p class="footer-note">
+        <a href="https://github.com/gowtham495/gowtham495.github.io" target="_blank" rel="noopener">View source</a>
+        &nbsp;·&nbsp;
+        <span id="currentYear"></span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
